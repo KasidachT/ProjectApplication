@@ -193,7 +193,19 @@ public class fillPage extends javax.swing.JFrame {
         
         dispose();//close fillpage when datapage show
     }//GEN-LAST:event_jb_SubmitActionPerformed
+    private void passActionPerformed(java.awt.event.ActionEvent evt) {                                     
+        // TODO add your handling code here:
+        if(pass.isSelected()){
+            troubles.setSelected(false);
+        }
+    }                                    
 
+    private void troublesActionPerformed(java.awt.event.ActionEvent evt) {                                         
+        // TODO add your handling code here:
+        if(troubles.isSelected()){
+            pass.setSelected(false);
+        }
+    }                                     
     /**
      * @param args the command line arguments
      */
@@ -241,5 +253,7 @@ public class fillPage extends javax.swing.JFrame {
     private javax.swing.JLabel jtMachineNumber;
     private javax.swing.JLabel jtRecord;
     private javax.swing.JTextField jtSelect;
+    private javax.swing.JCheckBox pass;
+    private javax.swing.JCheckBox troubles;
     // End of variables declaration//GEN-END:variables
 }
