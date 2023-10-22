@@ -124,14 +124,14 @@ public class loginFram extends javax.swing.JFrame {
               JOptionPane.showMessageDialog(null, "Please fill password");
           }else if(jtuser.getText().contains("Admin") && jpassword.getText().contains("123456789")){
               JOptionPane.showMessageDialog(null, "Login Successful");
+              fillPage FP = new fillPage();
+              FP.show();//show fillpage
+              dispose();//close login page when fillpage show
           }else{
               JOptionPane.showMessageDialog(null, "Username or Password wrog!!!","Message",JOptionPane.ERROR_MESSAGE);
           }
           
-          fillPage FP = new fillPage();
-          FP.show();//show fillpage
-          
-          dispose();//close login page when fillpage show
+         
     }//GEN-LAST:event_bloginActionPerformed
 
     private void jCshowPassActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jCshowPassActionPerformed
